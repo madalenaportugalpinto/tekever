@@ -9,7 +9,7 @@ To be able to get the application running you have to, get to the folder of the 
 * `db:create` - to create the database in your machine
 * `db:migrate` - to run the migrations of the database
 * `rails:seed` - to populate the database
-* `rails s` - to laugh the server
+* `rails s` - to launch the server
 
 Then you have three endpoints:
 
