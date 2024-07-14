@@ -1,24 +1,29 @@
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Welcome to my technical challenge!
 
-Things you may want to cover:
+To be able to get the application running you have to, get to the folder of the project and follow certain steps:
 
-* Ruby version
+* `bundle install` - to install all the gems that are part of the project as the Faker Gem
+* `db:create` - to create the database in your machine
+* `db:migrate` - to run the migrations of the database
+* `rails:seed` - to populate the database
+* `rails s` - to laugh the server
 
-* System dependencies
+Then you have three endpoints:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* the show of the user, that you can access with a method GET and `localhost:3000/users/:id`
+* the update of the user, that you can access with a method PATCH and `localhost:3000/users/:id`
+	* here you can use a body like:
+```
+{
+  name: "Madalena",
+  surname: "Pinto",
+  phone_number: "+351964890861",
+  email: "madalena@gmail.com",
+  balance: "5.50"
+}
+```
+* the update of the transaction, that you can access with a method PATCH and `localhost:3000/transactions/:id`
+	* here you don't need a body, the operation will be executed
