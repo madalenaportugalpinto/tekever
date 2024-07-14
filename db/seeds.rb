@@ -20,7 +20,7 @@ end
 User.all.each do |user|
   rand(1..10).times do
     Transaction.create(
-      amount: Faker::Number.between(from: -100.0, to: 100.0).round(2),
+      amount: Faker::Number.between(from: -1000.0, to: 1000.0).round(2),
       user_id: user.id,
     )
   end
